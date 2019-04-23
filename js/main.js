@@ -1,9 +1,9 @@
 "use strict";
 
-// DECLARATIVE RENDERING THE LIST//
+// DECLARATIVE RENDERING THE INPUT//
 
 let list = new Vue ({
-  el: '.list',
+  el: '.input',
   data: {
     newToDoText: '',
     todos: [

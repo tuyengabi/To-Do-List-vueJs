@@ -2,8 +2,7 @@
 let todoList = new Vue ({
   el: '.toDoList',
   data: {
-    todos: [
-    ],
+    todos: [],
     newList: ''
   },
 
@@ -11,6 +10,9 @@ let todoList = new Vue ({
     addTodo: function() {
       this.todos.push(this.newList);
       this.newList = '';
+    },
+    delTodo: function(index) {
+      this.todos.splice(index,1);
+    }
   }
-}
 })

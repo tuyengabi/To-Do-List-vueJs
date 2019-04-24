@@ -10,7 +10,7 @@
       <input class="input" v-model="newList" v-on:keyup.enter="addTodo" placeholder="Mes Priorité">
 
          <ul class="list">
-           <li v-for="todo in todos">
+           <li v-for="(todo, index) in todos">
              {{ todo }}
              <button class="btnDel" type="button" v-on:click="delTodo(index)">X</button>
            </li>

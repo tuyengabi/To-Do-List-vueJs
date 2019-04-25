@@ -8,6 +8,7 @@
 
     <div class="toDoList">
       <input class="input" v-model="newList" v-on:keyup.enter="addTodo" placeholder="Mes Priorité">
+          <button class="btnAdd" type="button" v-on:click="addTodo">Add</button>
 
       <ul class="list">
         <li v-for="(todo, index) in todos">
